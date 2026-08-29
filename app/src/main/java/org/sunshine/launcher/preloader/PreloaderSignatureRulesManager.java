@@ -1,4 +1,4 @@
-package org.levimc.launcher.preloader;
+package org.sunshine.launcher.preloader;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -8,8 +8,8 @@ import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.levimc.launcher.util.JsonIOUtils;
-import org.levimc.launcher.util.LauncherStorage;
+import org.sunshine.launcher.util.JsonIOUtils;
+import org.sunshine.launcher.util.LauncherStorage;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -31,7 +31,7 @@ public final class PreloaderSignatureRulesManager {
     private static final String PREFS_NAME = "preloader_signature_rules";
     private static final String KEY_LAST_SUCCESSFUL_UPDATE_TIME = "last_successful_update_time";
 
-    private static final String REMOTE_RULES_URL = "https://raw.githubusercontent.com/LiteLDev/LeviLaunchroid/refs/heads/main/resources/preloader/preloader_signature_rules_source.json";
+    private static final String REMOTE_RULES_URL = "https://raw.githubusercontent.com/Sunshine-Client/Sunshine-Launcher/refs/heads/main/resources/preloader/preloader_signature_rules_source.json";
 
     private static final AtomicBoolean refreshRunning = new AtomicBoolean(false);
     private static final OkHttpClient client = new OkHttpClient.Builder()
